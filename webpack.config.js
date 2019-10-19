@@ -19,7 +19,7 @@ module.exports = {
 
     // output files and chunks
     output: {
-        path: path.resolve( __dirname, 'demo' ),
+        path: path.resolve( __dirname, 'docs' ),
         filename: '[name].js'
     },
 
@@ -54,7 +54,7 @@ module.exports = {
 
         // copy static files from `src` to `dist`
         new CopyWebpackPlugin( [
-            { from: path.resolve( __dirname, 'src/assets' ), to: path.resolve( __dirname, 'demo/assets' ) }
+            { from: path.resolve( __dirname, 'src/assets' ), to: path.resolve( __dirname, 'docs/assets' ) }
         ] ),
 
         // provide `CONFIG` global variable with `config/${NODE_ENV}.json`
