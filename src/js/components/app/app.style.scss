@@ -1,0 +1,68 @@
+@import '~scss-global';
+
+.bm-app {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+    &__sub-title {
+        font-size: 11px;
+        line-height: 1;
+        font-weight: 500;
+    }
+
+    &__color-picker {
+        margin-top: 30px;
+        display: flex;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-bottom: 30px;
+
+        &__widget {
+            flex: 0 0 auto;
+            margin-right: 50px;
+        }
+
+        &__values {
+            flex: 1 1 auto;
+        }
+    }
+
+    &__footer {
+        margin-top: 30px;
+        border-top: 2px dashed #ddd;
+        padding-top: 30px;
+
+        &__description {
+            font-size: 11px;
+            line-height: 1.3;
+            max-width: 600px;
+            opacity: 0.6;
+            margin-bottom: 10px;
+
+            > a {
+                font-weight: 500;
+                border-bottom: 1px dotted #999;
+            }
+        }
+
+        &__made-by {
+            margin-top: 20px;
+            font-size: 12px;
+            line-height: 1.3;
+            text-transform: uppercase;
+
+            > a {
+                font-weight: 600;
+            }
+        }
+    }
+}

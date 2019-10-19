@@ -1,0 +1,46 @@
+@import '~scss-global';
+
+.bm-color-values {
+    
+    &__section {
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        &__values {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            &__item {
+                flex: 0 0 auto;
+                margin-right: 20px;
+
+                &__title {
+                    font-size: 12px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                }
+
+                &__value {
+                    @extend %bm-code;
+                }
+            }
+        }
+    }
+
+
+}

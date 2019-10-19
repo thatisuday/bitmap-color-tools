@@ -1,0 +1,13 @@
+// import reset css
+@import 'reset';
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap');
+
+// application top-level styles here
+html,
+body {
+    font-size: 10px;
+    font-family: $font-primary;
+    background-color: #fafafa;
+}
